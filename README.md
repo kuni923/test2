@@ -12,10 +12,13 @@
 エディターで開く`code test2.ipynb`      
 ローカルのVSCODEで修正（1行追加）　　  
 'git status'　　  
-'git add test2.ipynb'　　  
+修正ファイルを'git add test2.ipynb'　　  
 'git status'  
-'git commit -m Message test2.ipynb'　　  
-'git status'  　　  
-'git remote -v'  
-'git push origin master'  　      
-*cloneしたマスターをpushして更新した。　　
+commitする
+`git commit -m Message test2.ipynb`  　　  
+とりあえず'git status'
+リモートリポジトリを確認
+`git remote -v`
+pushする
+`git push origin master`    　      
+cloneしたマスターをpushして更新した。　　
