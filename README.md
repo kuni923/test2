@@ -28,4 +28,5 @@ cloneしたマスターをpushして更新した。
 ローカルリポジトリにコミット`git commit -m pyconvertfile test2.py`  
 リモートリポジトリに`git push origin master`する。  
 githubのtest2リポジトリにtest2.pyがあることを確認
-# リモートのブランチをローカルで修正して変更する
+# （目標）リモートのマスターではなくブランチをローカルで修正して変更する
+ここまでマスターしかいじれていない。
