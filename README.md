@@ -50,6 +50,7 @@ README.md  test2  test2.ipynb  test2.py
 /test2$ git branch  
   *test2_dev  
 それぞれマスターは異なるブランチとなっている。
+`git push origin test2_dev`
 
 # 補足
 * ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
