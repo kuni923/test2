@@ -5,6 +5,7 @@
 そのファイルをローカルからGITHUBの作成してあったこの新規リポジトリ(test２）に（masterとして）アップロード  
 # ローカルにcloneして作業してpush
 アップロードしたファイルのブランチ(test2_dev)をcreateする  
+ローカルにリポジトリをクローンする  
 `git clone git@github.com:kuni923/test2.git`  
 ローカルのワークスペースにtest2フォルダができる  
 `git add test2.ipynb`  
