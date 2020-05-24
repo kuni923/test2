@@ -38,17 +38,17 @@ origin/HEAD -> origin/master
 origin/master  
 origin/test2_dev  
 アップロードしたファイルのブランチ(test2_dev)があることはわかる  
-*これをローカルのVScodeにクローンする。
-#`git clone --branch test2_dev git@github.com:kuni923/test2.git`  
- でgithubのtest2リポジトリにあるtest2.pyをcloneしてローカルリポジトリを作れた。
-フォルダが同じ名前なので紛らわしいが、先にcloneしたtest2のなかに、ネストしてtest2になっている。
-/test2$ ls
-README.md  test2  test2.ipynb  test2.py
-/test2$ git branch
-* master
-/test2$ cd test2
-/test2$ git branch
-* test2_dev
+* これをローカルのVScodeにクローンする。
+`git clone --branch test2_dev git@github.com:kuni923/test2.git`  
+でgithubのtest2リポジトリにあるtest2.pyをcloneしてローカルリポジトリを作れた。
+フォルダが同じ名前なので紛らわしいが、先にcloneしたtest2のなかに、ネストしてtest2になっている。  
+/test2$ ls  
+README.md  test2  test2.ipynb  test2.py  
+/test2$ git branch  
+  *master  
+/test2$ cd test2  
+/test2$ git branch  
+  *test2_dev  
 それぞれマスターは異なるブランチとなっている。
 # 補足
 ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
