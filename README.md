@@ -5,17 +5,17 @@
 そのファイルをローカルからGITHUBの作成してあったこの新規リポジトリ(test２）に（masterとして）アップロード  
 # ローカルにcloneして作業してpush
 アップロードしたファイルのブランチ(test2_dev)をcreateする  
-'git clone git@github.com:kuni923/test2.git'    
+`git clone git@github.com:kuni923/test2.git`  
 ローカルのワークスペースにtest2フォルダができる  
-'git add test2.ipynb'   
-'git status'  
-'code test2.ipynb'  
+`git add test2.ipynb`  
+とりあえず`git status`  
+エディターで開く`code test2.ipynb`      
 ローカルのVSCODEで修正（1行追加）　　  
 'git status'　　  
 'git add test2.ipynb'　　  
-'git status'　　
+'git status'  
 'git commit -m Message test2.ipynb'　　  
-'git status'　　  
-'git remote -v'　　
-'git push origin master'　　      
+'git status'  　　  
+'git remote -v'  
+'git push origin master'  　      
 *cloneしたマスターをpushして更新した。　　
