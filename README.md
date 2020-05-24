@@ -5,4 +5,3 @@
 そのファイルをローカルからGITHUBの作成してあったこの新規リポジトリ(test２）に（masterとして）アップロード
 # ローカルにcloneするブランチを用意する
 アップロードしたファイルのブランチを作成する
-（ipynb-py-convert test.py test2.ipynbして）
