@@ -54,5 +54,4 @@ README.md  test2  test2.ipynb  test2.py
 ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
 `git checkout issue1`  
 Switched to branch 'issue1'  
-チェックアウトだけど、チェックインしている。gitにcheckinはない。
 
