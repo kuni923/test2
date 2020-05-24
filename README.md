@@ -29,14 +29,14 @@ cloneしたマスターをpushして更新した。
 リモートリポジトリに`git push origin master`する。  
 githubのtest2リポジトリにtest2.pyがあることを確認
 # Next リモートのマスターではなくブランチをローカルで修正して変更する。
-ここまでローカルではマスターしかいじれていない。ところで、.ipynbファイルはGoogle colaboratoryでGithubから直接開いて編集できる。編集後にGithubにコピーを保存でき、開くときにmaster以外のブランチも選べるので、リモートのリポジトリ（この場合Github）のoriginをいじれる。このため、リポジトリのファイルはJyupiternote形式で最初から作っておきたい。
+ここまでローカルではマスターしかいじれていない。ところで、.ipynbファイルはGoogle colaboratoryでGithubから直接開いて編集できる。編集後にGithubにコピーを保存でき、開くときにmaster以外のブランチも選べるので、リモートのリポジトリ（この場合Github）のoriginをいじれる。リポジトリのファイルはJyupiternote形式で最初から作っておきたい。
 ローカルのvscodeで同様のことができるようにする。
 # git branchを使ってブランチを確認する。
 `git branch`で現在ローカルにcloneしているブランチを知ることができる。やってみたら* masterしかない。アスタリスクはHEAD（現在いるブランチの意）  
 `git branch -r`でGithubのリモートリポジトリのブランチを知ることができる。  
 origin/HEAD -> origin/master  
 origin/master
-origin/test2_devでアップロードしたファイルのブランチ(test2_dev)があることはわかる。 
+origin/test2_devでアップロードしたファイルのブランチ(test2_dev)があることはわかる  
 *これをローカルのVScodeにクローンする。
 # 補足
 ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
