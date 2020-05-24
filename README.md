@@ -4,9 +4,9 @@
 ローカルでipynbを（ipynb-py-convert test.py test2.ipynbして）作成（作成方法はなんでもいい）  
 そのファイルをローカルからGITHUBの作成してあったこの新規リポジトリ(test２）に（masterとして）アップロード  
 # ローカルにcloneして作業してpush
-アップロードしたファイルのブランチ(test2_dev)をcreateする  
+アップロードしたファイルのブランチ(test2_dev)をcreateする（これをローカルでいじりたい）    
 ローカルにリポジトリをクローンする  
-`git clone git@github.com:kuni923/test2.git`  
+`git clone`  
 ローカルのワークスペースにtest2フォルダができる  
 `git add test2.ipynb`  
 確認`git status`  
@@ -38,8 +38,8 @@ origin/HEAD -> origin/master
 origin/master  
 origin/test2_dev  
 アップロードしたファイルのブランチ(test2_dev)があることはわかる  
-* これをローカルのVScodeにクローンする。
-`git clone --branch test2_dev git@github.com:kuni923/test2.git`  
+* これをローカルのVScodeにクローンする。--branch ブランチ名  
+`git clone --branch test2_dev`  
 でgithubのtest2リポジトリにあるtest2.pyをcloneしてローカルリポジトリを作れた。
 フォルダが同じ名前なので紛らわしいが、先にcloneしたtest2のなかに、ネストしてtest2になっている。  
 /test2$ ls  
