@@ -35,8 +35,9 @@ githubのtest2リポジトリにtest2.pyがあることを確認
 `git branch`で現在ローカルにcloneしているブランチを知ることができる。やってみたら* masterしかない。アスタリスクはHEAD（現在いるブランチの意）  
 `git branch -r`でGithubのリモートリポジトリのブランチを知ることができる。  
 origin/HEAD -> origin/master  
-origin/master
-origin/test2_devでアップロードしたファイルのブランチ(test2_dev)があることはわかる  
+origin/master  
+origin/test2_dev  
+アップロードしたファイルのブランチ(test2_dev)があることはわかる  
 *これをローカルのVScodeにクローンする。
 # 補足
 ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
