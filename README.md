@@ -55,8 +55,8 @@ README.md  test2  test2.ipynb  test2.py
 `git checkout issue1`  
 Switched to branch 'issue1'  
 
-# Google colaboratoryで編集後には、ローカルのVSCODEとは違うファイルができるので、ローカルで編集する際には、まだcloneしなおして、編集後、pushする。
-# --branch ブランチ名でcloneしたファイルを編集後にpushできない問題、
+# Google colaboratoryで編集後には、ローカルのVSCODEとは違うファイルができるので、ローカルで編集する際には、clone,add,commitしなおしてpushする。
+# --branch ブランチ名でcloneしたファイルを編集後にpushできないとき、
 error: src refspec master does not match any  
-error: failed to push some refs to 'kuni923/test2.git'
+の解決は`git push origin branchname`, master以外のブランチのときにはブランチ名をclone --branch のブランチ名と一致させる。
 
