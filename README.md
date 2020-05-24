@@ -16,6 +16,6 @@
 確認`git status`  
 commitする`git commit -m Message test2.ipynb`  　　  
 とりあえず`git status`  
-リモートリポジトリを確認`git remote -v`
+リモートリポジトリを確認`git remote -v`  
 pushする`git push origin master`    　      
 cloneしたマスターをpushして更新した。　　
