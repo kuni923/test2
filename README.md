@@ -50,13 +50,14 @@ README.md  test2  test2.ipynb  test2.py
 /test2$ git branch  
   *test2_dev  
 それぞれマスターは異なるブランチとなっている。
+
 # 補足
-ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
+* ローカルリポジトリに複数のブランチをつくって、切り替えることもできる。  
 `git checkout issue1`  
 Switched to branch 'issue1'  
-
+# メモ
 # Google colaboratoryで編集後には、ローカルのVSCODEとは違うファイルができるので、ローカルで編集する際には、clone,add,commitしなおしてpushする。
-# --branch ブランチ名でcloneしたファイルを編集後にpushできないとき、
+# --branch ブランチ名でcloneしたファイルを編集後にpushできない。
 error: src refspec master does not match any  
 の解決は`git push origin branchname`, master以外のブランチのときにはブランチ名をclone --branch のブランチ名と一致させる。
 
