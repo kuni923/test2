@@ -21,4 +21,11 @@ commitする`git commit -m Message test2.ipynb`  　　
 pushする`git push origin master`    　      
 cloneしたマスターをpushして更新した。  
 アップロードしたファイルのブランチ(test2_dev)をcreateしたが、それは変更できなかった
+# VScodeでipynbをpyに変更して、ローカルリポジトリにいれて、gitにpushした。
+変換はエクスプローラーのファイルで右クリックメニューで変換  
+`git status`でUntracked filesとしてtest2.pyができていることを確認  
+`git add test2.py`する。 
+ローカルリポジトリにコミット`git commit -m pyconvertfile test2.py`  
+リモートリポジトリに`git push origin master`する。  
+githubのtest2リポジトリにtest2.pyがあることを確認
 # リモートのブランチをローカルで修正して変更する
