@@ -21,4 +21,4 @@ commitする`git commit -m Message test2.ipynb`  　　
 pushする`git push origin master`    　      
 cloneしたマスターをpushして更新した。  
 アップロードしたファイルのブランチ(test2_dev)をcreateしたが、それは変更できなかった
-# リモートのブランチをリモートで修正して変更する
+# リモートのブランチをローカルで修正して変更する
