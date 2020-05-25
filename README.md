@@ -61,5 +61,10 @@ error: src refspec master does not match any
 
 # `Pull`を調べる。
 * `clone`, `add`, `commit`, `push`, `branch`, `status`を理解した。  
-例えば、Google colaboratoryで編集後にpushすると、ローカルのVSCODEのリポジトリとGitHubのリポジトリのファイルのバージョンが異なる。ローカルで編集する際に、Githubから最新のリポジトリをclone,add,commitしなおして編集後にpushしてリモートを更新しているが、大変つらい。
+例えば、Google colaboratoryで編集後にpushすると、ローカルのVSCODEのリポジトリとGitHubのリポジトリのファイルのバージョンが異なる。ローカルで編集する際に、Githubから最新のリポジトリをclone,add,commitしなおして編集後にpushしてリモートを更新しているが、大変つらい。  
+ローカルリポジトリに新しいファイルを作って、pushしようとしたらpushできなかった。pullを使えとエラーメッセージに書いてあった。  
+* `git pull origin master`でリモートのmaster（オリジン）とローカルリポジトリのmasterが同期された。  
+その後に、さきほどのpush origin masterをしたら通った。
+
+# originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？
 
