@@ -59,6 +59,7 @@ Switched to branch 'issue1'
 error: src refspec master does not match any  
 の解決は`git push origin branchname`, master以外のブランチのときにはブランチ名をclone --branch のブランチ名と一致させる。
 
-# Google colaboratoryで編集後には、ローカルのVSCODEのリポジトリとGitHubのリポジトリのファイルのバージョンが異なる。ローカルで編集する際に、clone,add,commitしなおしてpushしてリモートを更新しているが、たぶん便利なコマンドがあるはず。
-# Pullを調べる。
+# `Pull`を調べる。
+* `clone`,`add`,`commit`,`push`,`branch`を理解した。  
+例えば、Google colaboratoryで編集後にpushすると、ローカルのVSCODEのリポジトリとGitHubのリポジトリのファイルのバージョンが異なる。ローカルで編集する際に、Githubから最新のリポジトリをclone,add,commitしなおして編集後にpushしてリモートを更新しているが、大変つらい。
 
