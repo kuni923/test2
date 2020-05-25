@@ -21,8 +21,8 @@ pushする`git push origin master`    　
 cloneしたマスターをpushして更新した。  
 * アップロードしたファイルのブランチ(test2_dev)をcreateしたが、それは変更できなかった
 # リモートのマスター以外のブランチをローカルで修正して変更する。
-ここまでローカルではマスターしかいじれていない。ところで、.ipynbファイルはGoogle colaboratoryでGithubから直接開いて編集できる。編集後にGithubにコピーを保存でき、開くときにmaster以外のブランチも選べるので、リモートのリポジトリ（この場合Github）のoriginをいじれる。リポジトリのファイルはJyupiternote形式で最初から作っておきたい。
-ローカルのvscodeで同様のことができるようにする。
+ここまでローカルではマスターしかいじれていない。ところで、.ipynbファイルはGoogle colaboratoryでGithubから直接開いて編集できる。編集後にGithubにコピーを保存でき、開くときにmaster以外のブランチも選べるので、リモートのリポジトリ（この場合Github）のoriginをいじれる（リポジトリのファイルはJyupiternote形式で最初から作っておく必要がある）。  
+* ローカルのvscodeで同様のことができるようにする。
 # git branchを使ってブランチを確認する。
 `git branch`で現在ローカルにcloneしているブランチを知ることができる。やってみたら* masterしかない。アスタリスクはHEAD（現在いるブランチの意）  
 `git branch -r`でGithubのリモートリポジトリのブランチを知ることができる。  
@@ -41,7 +41,7 @@ README.md  test2  test2.ipynb  test2.py
 /test2$ cd test2  
 /test2$ git branch  
   *test2_dev  
-* それぞれマスターは異なるブランチとなっている。  
+* それぞれマスターは異なるブランチとなっているためpushは注意   
 `git push origin test2_dev`
 
 # MISC
@@ -60,4 +60,5 @@ error: src refspec master does not match any
 の解決は`git push origin branchname`, master以外のブランチのときにはブランチ名をclone --branch のブランチ名と一致させる。
 
 # Google colaboratoryで編集後には、ローカルのVSCODEのリポジトリとGitHubのリポジトリのファイルのバージョンが異なる。ローカルで編集する際に、clone,add,commitしなおしてpushしてリモートを更新しているが、たぶん便利なコマンドがあるはず。
+# Pullを調べる。
 
