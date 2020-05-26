@@ -73,8 +73,10 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)    
         modified:   test2.ipynb  
 no changes added to commit (use "git add" and/or "git commit -a")  
-これを`add`, `commit -m`してローカルリポジトリを更新、その後`push`する。リモートとローカルの同期が取れていないので、pushでエラーがでる状況になった。
-
+これを`add`, `commit -m`してローカルリポジトリを更新、その後`push`する。リモートとローカルの同期が取れていないので、pushでエラーがでる状況になった。  
+`git pull origin master`の結果  
+ Unmerged paths:  
+  (use "git add <file>..." to mark resolution)  
+        both modified:   test2.ipynb
 
 # originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？
-
