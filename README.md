@@ -66,5 +66,15 @@ error: src refspec master does not match any
 * `git pull origin master`でリモートのmaster（オリジン）とローカルリポジトリのmasterが同期された。  
 その後に、さきほどのpush origin masterをしたら通った。
 
+# Pushでエラーが出る状況をつくって、`pull`を練習する。
+* Google colaboratoryでGithubのtest2.ipynbを開いて編集後、Githubにコピーを保存でGithubに変更を反映した。その時点で、Githubからcloneしているローカルリポジトリの`git status`をみると、リモートでの変更は知らないことを確認。その後、ローカルでローカルのファイルを変更して、再度`git status`すると、ローカルでの変更を検知している。  
+Changes not staged for commit:  
+  (use "git add <file>..." to update what will be committed)  
+  (use "git checkout -- <file>..." to discard changes in working directory)    
+        modified:   test2.ipynb  
+no changes added to commit (use "git add" and/or "git commit -a")  
+これを`add`, `commit -m`してローカルリポジトリを更新、その後`push`する。リモートとローカルの同期が取れていないので、pushでエラーがでる状況になった。
+
+
 # originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？
 
