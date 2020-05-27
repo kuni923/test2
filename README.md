@@ -130,7 +130,7 @@ Creates the branch <new_branch> and start it at <start_point>; if it already exi
 *ブランチの一覧を確認    
 `git branch -a`  
 
-# ブランチのリモートへの登録
+# ローカルブランチのリモートへの登録
 `git push -u origin 作成したブランチ名`  
 eg. 
 `git checkout -b test2_dev_test`  
@@ -143,4 +143,10 @@ eg.
  remotes/origin/master  
  remotes/origin/test2_dev  
  remotes/origin/test2_dev_test  
-* originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
+ 
+# リモートにあるブランチからローカルでブランチを作成  
+`git checkout -b ローカルに作成するブランチ名 origin/ブランチ作成元のリモートにあるブランチ名`  
+* つくったローカルブランチは、`git push -u origin 作成したブランチ名`でリモートへ登録の要あり。
+
+
+* originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　originは謎、origin/ブランチ名という書き方は、remotes/が前に省略されているような気がする。
