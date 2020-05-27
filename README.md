@@ -88,32 +88,48 @@ no changes added to commit (use "git add" and/or "git commit -a")
 * `git checkout [<branch>]`  
 To prepare for working on <branch>, switch to it by updating the index and the files in the working tree, and by pointing HEAD at the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the <branch>.  
 * If <branch> is not found but there does exist a tracking branch in exactly one remote (call it <remote>) with a matching name and --no-guess is not specified, treat as equivalent to  
-`$ git checkout -b <branch> --track <remote>/<branch>`  
--b <new_branch>  
-Create a new branch named <new_branch> and start it at <start_point>; see git-branch[1] for details.  
--B <new_branch>  
-Creates the branch <new_branch> and start it at <start_point>; if it already exists, then reset it to <start_point>. This is equivalent to running "git branch" with "-f"; see git-branch[1] for details.
+`$ git checkout -b <branch> --track <remote>/<branch>`を理解する。    
  
-# git checkout
+# `git checkout`
+単純にブランチを切り替える
 * `git branch -a`  
-** master  
+*master  
 remotes/origin/HEAD -> origin/master  
 remotes/origin/master  
 remotes/origin/test2_dev  
-* `git checkout -b test2_dev --track remotes/origin/test2_dev`  
+* `git checkout -b test2_dev --track remotes/origin/test2_dev`で既存ブランチをリモートまでtrackしてcheckout  
 Branch test2_dev set up to track remote branch test2_dev from origin.  
 Switched to a new branch 'test2_dev'
-* `git status`  
+* `git status`で確認すると切り替わっている。  
 On branch test2_dev  
 Your branch is up-to-date with 'origin/test2_dev'.  
 nothing to commit, working tree clean  
 * `git branch -a`  
 master  
-** test2_dev  
+*test2_dev  
 remotes/origin/HEAD -> origin/master  
 remotes/origin/master  
 remotes/origin/test2_dev  
 
+# `git checkout -b` 
+* -b <new_branch>  
+Create a new branch named <new_branch> and start it at <start_point>; see git-branch[1] for details.  
+* -B <new_branch>  
+Creates the branch <new_branch> and start it at <start_point>; if it already exists, then reset it to <start_point>. This is equivalent to running "git branch" with "-f"; see git-branch[1] for details.
 
+#ブランチを新規に作る
+* ローカルのブランチから新規ブランチを作成する方法  
+*ブランチを作りたいgitのディレクトリに入る   
+`cd ディレクトリパス`  
+*ブランチの一覧を確認    
+`git branch -a`  
+*ブランチを作る元のブランチに切り替える  
+`git checkout master`ここではマスターに切り替えた。  
+*新規ブランチを作成  
+`git checkout -b 作成するブランチ名`      
+*ブランチの一覧を確認    
+`git branch -a`  
+*ブランチをリモートに登録  
+`git push -u origin 作成したブランチ名`  
 
 * originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
