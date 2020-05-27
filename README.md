@@ -131,7 +131,7 @@ Creates the branch <new_branch> and start it at <start_point>; if it already exi
 `git branch -a`  
 
 # ブランチのリモートへの登録
-`git push -u origin 作成したブランチ名`
+`git push -u origin 作成したブランチ名`  
 eg. 
 `git checkout -b test2_dev_test`  
 `git push -u origin test2_dev_test`  
