@@ -97,7 +97,7 @@ To prepare for working on <branch>, switch to it by updating the index and the f
 remotes/origin/HEAD -> origin/master  
 remotes/origin/master  
 remotes/origin/test2_dev  
-* `git checkout -b test2_dev --track remotes/origin/test2_dev`で既存ブランチをリモートまでtrackしてcheckout  
+* `git checkout -b test2_dev --track remotes/origin/test2_dev`で既存ブランチをリモートまでtrackしてcheckout. remotes/はなくても大丈夫だと思う。    
 Branch test2_dev set up to track remote branch test2_dev from origin.  
 Switched to a new branch 'test2_dev'
 * `git status`で確認すると切り替わっている。  
@@ -129,7 +129,18 @@ Creates the branch <new_branch> and start it at <start_point>; if it already exi
 `git checkout -b 作成するブランチ名`      
 *ブランチの一覧を確認    
 `git branch -a`  
-*ブランチをリモートに登録  
-`git push -u origin 作成したブランチ名`  
 
+# ブランチのリモートへの登録
+`git push -u origin 作成したブランチ名`
+eg. 
+`git checkout -b test2_dev_test`  
+`git push -u origin test2_dev_test`  
+`git status -a`  
+ master  
+ test2_dev  
+*test2_dev_test  
+ remotes/origin/HEAD -> origin/master  
+ remotes/origin/master  
+ remotes/origin/test2_dev  
+ remotes/origin/test2_dev_test  
 * originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
