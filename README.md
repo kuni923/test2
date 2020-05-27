@@ -97,10 +97,23 @@ Creates the branch <new_branch> and start it at <start_point>; if it already exi
 # git checkout
 * `git branch -a`  
 ** master  
- remotes/origin/HEAD -> origin/master  
- remotes/origin/master  
- remotes/origin/test2_dev  
+remotes/origin/HEAD -> origin/master  
+remotes/origin/master  
+remotes/origin/test2_dev  
 * `git checkout -b test2_dev --track remotes/origin/test2_dev`  
 Branch test2_dev set up to track remote branch test2_dev from origin.  
 Switched to a new branch 'test2_dev'
+* `git status`  
+On branch test2_dev  
+Your branch is up-to-date with 'origin/test2_dev'.  
+nothing to commit, working tree clean  
+* `git branch -a`
+master  
+** test2_dev  
+remotes/origin/HEAD -> origin/master  
+remotes/origin/master  
+remotes/origin/test2_dev  
+
+
+
 * originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
