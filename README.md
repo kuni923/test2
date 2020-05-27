@@ -107,7 +107,7 @@ Switched to a new branch 'test2_dev'
 On branch test2_dev  
 Your branch is up-to-date with 'origin/test2_dev'.  
 nothing to commit, working tree clean  
-* `git branch -a`
+* `git branch -a`  
 master  
 ** test2_dev  
 remotes/origin/HEAD -> origin/master  
