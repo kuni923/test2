@@ -84,4 +84,13 @@ no changes added to commit (use "git add" and/or "git commit -a")
 # `master`しか使いこなせないうちは、最初に`pull origin master`でリモートとローカルを同期してから、ファイルの編集を始める。そうしないと、同期が困難。
 
 # `master`以外の`branch`を理解する。
+* `git branh -a`でリモートを含めてすべてのブランチを見ることができる。  
+* `git checkout [<branch>]`  
+To prepare for working on <branch>, switch to it by updating the index and the files in the working tree, and by pointing HEAD at the branch. Local modifications to the files in the working tree are kept, so that they can be committed to the <branch>.  
+* If <branch> is not found but there does exist a tracking branch in exactly one remote (call it <remote>) with a matching name and --no-guess is not specified, treat as equivalent to  
+`$ git checkout -b <branch> --track <remote>/<branch>`  
+-b <new_branch>  
+Create a new branch named <new_branch> and start it at <start_point>; see git-branch[1] for details.  
+-B <new_branch>  
+Creates the branch <new_branch> and start it at <start_point>; if it already exists, then reset it to <start_point>. This is equivalent to running "git branch" with "-f"; see git-branch[1] for details.
 * originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
