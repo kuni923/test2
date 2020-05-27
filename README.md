@@ -93,4 +93,14 @@ To prepare for working on <branch>, switch to it by updating the index and the f
 Create a new branch named <new_branch> and start it at <start_point>; see git-branch[1] for details.  
 -B <new_branch>  
 Creates the branch <new_branch> and start it at <start_point>; if it already exists, then reset it to <start_point>. This is equivalent to running "git branch" with "-f"; see git-branch[1] for details.
+ 
+# git checkout
+* `git branch -a`  
+** master  
+ remotes/origin/HEAD -> origin/master  
+ remotes/origin/master  
+ remotes/origin/test2_dev  
+* `git checkout -b test2_dev --track remotes/origin/test2_dev`  
+Branch test2_dev set up to track remote branch test2_dev from origin.  
+Switched to a new branch 'test2_dev'
 * originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
