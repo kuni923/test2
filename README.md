@@ -77,6 +77,10 @@ no changes added to commit (use "git add" and/or "git commit -a")
 `git pull origin master`の結果  
  Unmerged paths:  
   (use "git add <file>..." to mark resolution)  
-        both modified:   test2.ipynb
+        both modified:   test2.ipynb  
+* `master`以外の`branch`を使えていないのが問題
+ 
+# `master`しか使いこなせないうちは、最初に`pull origin master`でリモートとローカルを同期してから、ファイルの編集を始める。そうしないと、同期が困難。
 
-# originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？
+# `master`以外の`branch`を理解する。
+* originやmasterはブランチ名のことなのか？ファイル名を書くのはだめなのか？　ー＞　ブランチ名を書く。
